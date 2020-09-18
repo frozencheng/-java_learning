@@ -66,15 +66,16 @@ public class Hongbao {
         return list;
     }
 
-     /**定义一个 除法去小数点后两位的方法
-    java.text.DecimalFormat   df   =new   java.text.DecimalFormat("#.00");
-    df.format(你要格式化的数字);
-
-    例：new java.text.DecimalFormat("#.00").format(3.1415926)
-
-    #.00 表示两位小数 #.0000四位小数 以此类推...
-    改成数据清洗 保留后两位的浮点数
-      */
+    /**
+     * 定义一个 除法去小数点后两位的方法
+     * java.text.DecimalFormat   df   =new   java.text.DecimalFormat("#.00");
+     * df.format(你要格式化的数字);
+     * <p>
+     * 例：new java.text.DecimalFormat("#.00").format(3.1415926)
+     * <p>
+     * #.00 表示两位小数 #.0000四位小数 以此类推...
+     * 改成数据清洗 保留后两位的浮点数
+     */
     public double clear(double num) {
 //        System.out.println(num);
         DecimalFormat df = new DecimalFormat("#.00");
